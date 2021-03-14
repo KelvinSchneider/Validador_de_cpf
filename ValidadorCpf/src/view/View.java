@@ -2,19 +2,15 @@ package view;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-
 import controller.ValidarCpf;
-
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
@@ -93,7 +89,7 @@ public class View extends JFrame {
 				StringBuilder cpf = new StringBuilder(txtCpf.getText());
 
 				if (cpf.length() < 11 || cpf.length() > 11) {
-					JOptionPane.showMessageDialog(null, "Caracteres invalidos \n-Digite apenas números \n-Sem pontuação");
+					JOptionPane.showMessageDialog(null, "Caracteres invalidos \n-Digite apenas nÃºmeros \n-Sem pontuaÃ§Ã£o");
 				} else {
 
 					validarCpf.cadastrarVariavel(txtCpf);
